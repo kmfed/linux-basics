@@ -70,7 +70,42 @@ screen就是为了解决这个问题，ssh连接断开时，原有操作窗口�
 
 #### 新建远程代码库
 
-命令行创建：
+##### 创建*.git文件夹
+
+命令行创建(windows下可以用git的命令行工具)：
+
+git clone --bare [想要创建远程代码库的文件夹路径] [想要起的名字].git
+
+比如：git clone --bare kmsocial_3.0 kmsocial3.git
+
+kmsocial3.git ------ 需要上传到服务器的文件夹
+
+##### 上传*.git文件夹到服务器
+
+1. 命令行
+   可以用sftp或scp工具上传
+2. 客户端
+   windows操作系统可以用WinScp或FileZilla上传
+
+##### 初始化服务器上的*.git文件夹
+
+用cd切换到*.git文件夹下，执行：
+
+git init --bare --shared
+
+##### 本地重新clone代码
+
+关键：知道服务器上代码库的绝对路径
+
+比如：julian@facebook.com:/home/julian/git/kmsocial3.git
+
+git clone julian@facebook.com:/home/julian/git/kmsocial3.git
+
+搞定！
+
+
+
+
 
 
 
