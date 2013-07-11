@@ -1,3 +1,4 @@
-linux-basics
+孔明前端工程师比知的若干linux操作
 ============
 # linux基本指令
+
