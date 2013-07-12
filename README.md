@@ -58,6 +58,7 @@ screen就是为了解决这个问题，ssh连接断开时，原有操作窗口�
 - git merge     -- 合并代码
 - git pull      -- 相当于先git fetch获取最新代码，然后再将本分支的远程分支上的更新合到本地分支上
 - git checkout  -- 切换分支
+- git branch    -- 查看分支
 
 
 ### 如何新建远程代码库
